@@ -1,5 +1,5 @@
-var width = 500,
-    height = 500;
+var width = 1500,
+    height = 1500;
 
 var svg = d3.select('body')
             .append('svg')
@@ -43,6 +43,6 @@ function ticked(){
     u.exit().remove()
 }
 
-simulation.force('charge',d3.forceManyBody().strength(-2))
+simulation.force('charge',d3.forceManyBody().strength(10))
 
 
