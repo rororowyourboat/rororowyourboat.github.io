@@ -43,6 +43,6 @@ function ticked(){
     u.exit().remove()
 }
 
-simulation.force('charge',d3.forceManyBody().strength(3000))
+simulation.force('charge',d3.forceManyBody().strength(300))
 
 
