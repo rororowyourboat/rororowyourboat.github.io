@@ -21,7 +21,7 @@ var nodes = d3.range(numNodes).map(function(d) {
 //     .on('tick',ticked);
 
 var simulation = d3.forceSimulation(nodes)
-    .force('charge', d3.forceManyBody().strength(10))
+    .force('charge', d3.forceManyBody().strength(3))
     .force('center', d3.forceCenter(width / 2, height / 2))
     .force('collision', d3.forceCollide().radius(function(d) {
       return d.radius
